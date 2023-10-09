@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es"
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="wifth=device-width, initial-scale1.0">
+        <title>Proyecto 1 Daribeth Leal</title>
+        <link rel="shortcut icon" href="./imagenes_integrador_front/codoacodo.png" type="Image/x-icon">
+        <link rel="stylesheet" href="./Estilos/Estilos.css">
+    </head>
+<body>
+    <!--Menú Superior-->
+    <header class="header">
+        <div class="barraNavegacion1">
+            <div class="logCac">
+                <a href="Proyecto 1 Daribeth Leal.Html">
+                    <img class="logo" src="./imagenes_integrador_front/codoacodo.png" alt"Logo Codo a Codo 4.0">
+                </a>
+                <h2>Conf. Bs.As.</h2>
+            </div>
+            <nav class="barraNavegacion2">
+                <ul class="enlacesNavegacion">
+                    <li class="listasItems"><a class="letrasBlancas navItems" href="#Conferencias">La Conferencia</a></li>
+                    <li class="listasItems"><a class="letrasGrises navItems" href="#Oradores">Los Oradores</a></li>
+                    <li class="listasItems"><a class="letrasGrises navItems" href="#HorayFecha">El Lugar y La Fecha</a></li>
+                    <li class="listasItems"><a class="letrasGrises navItems" href="#FormularioOrador">Conviertete en Orador</a></li>
+                    <li class="listasItems"><a class="letrasVerdes navItems" href="./Ticket.html" target="_blank">Comprar Tickets</a></li>    
+                </ul>
+            </nav>
+            </div>
+        <section class="Conf" id="Conferencias">
+            <h1 class="h1" >Conf. Bs.As.</h1>
+            <p class="p1">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para tí. ¡Te esperamos!</p>
+            <a href="">Quiero ser Orador</a>
+            <a href="">Comprar Tickets</a>
+        </section>
+    </header>
+    <!--Cuerpo de la Pagina-->
+    <main class="main">
+        <!--Seccion de Oradores-->
+        <section id="Oradores">
+            <h2><div>CONOCE A LOS</div>ORADORES</h2>
+            <div class="contenedorOradores">
+                <div class="tarjetas">
+                    <img src="./imagenes_integrador_front/steve.jpg" height="" loading="lazy" alt="Steve Jobs">
+                    <h4 class="form1">JavaScript</h4>
+                    <h4 class="form2">React</h4>
+                    <h3>Steve Jobs</h3>
+                    <p class="p2">Steve Jobs By Daribeth, Steve Jobs By Daribeth, Steve Jobs By Daribeth, Steve Jobs By Daribeth, Steve Jobs By Daribeth, Steve Jobs By Daribeth, Steve Jobs By Daribeth, Steve Jobs By Daribeth.
+                    </p>
+                </div>
+                <div class="tarjetas">
+                    <img src="./imagenes_integrador_front/bill.jpg" height="" loading="lazy" alt="Bill Gates">
+                    <h4 class="form1">JavaScript</h4>
+                    <h4 class="form2">React</h4>
+                    <h3>Bill Gates</h3>
+                    <p class="p2">Bill Gates By Daribeth, Bill Gates By Daribeth, Bill Gates By Daribeth, Bill Gates By Daribeth, Bill Gates By Daribeth, Bill Gates By Daribeth, Bill Gates By Daribeth, Bill Gates By Daribeth.
+                    </p>
+                </div>
+                <div class="tarjetas">
+                    <img src="./imagenes_integrador_front/ada.jpeg" height="" loading="lazy" alt="Ada Lovelace">
+                    <h4 class="form3">Negocios</h4>
+                    <h4 class="form4">Startups</h4>
+                    <h3>Ada Lovelace</h3>
+                    <p class="p2">Ada Lovelace By Daribeth, Ada Lovelace By Daribeth, Ada Lovelace By Daribeth, Ada Lovelace By Daribeth, Ada Lovelace By Daribeth, Ada Lovelace By Daribeth, Ada Lovelace By Daribeth.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--Seccion de BsAs Octubre-->
+        <section id="HorayFecha">
+            <div>
+                <img src="./imagenes_integrador_front/honolulu.jpg" width="600Px" height="" loading="lazy" alt="Mar de PLata">
+            </div>
+            <div>
+            <h2 class="h2">Bs As Octubre</h2>
+            <p class="p1">Buenos Aires es la provincia y localidad más grande del estado de Argentina. En los Estados Unidos, Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad condado consolidada que  cubre toda la ciudad (aproximadamente 600 km2. de superficie).
+            </p>
+            </div>
+            <a href=""></a>    
+        </section>
+        <!--Seccion de Formulario-->
+        <section id="FormularioOrador">
+            <h2>Conviertete en un <br> Orador</h2>
+            <p>Anótate como orador para dar una charla ignite. ¡Cuéntanos de qué quieres hablar!</p>
+            <div action="">
+                <div>
+                    <!--<label for="name"> Ingrese Su Nombre</label>-->
+                    <input type="text" id="name" name="nombre" placeholder="Nombre" required >
+                    <!--<label for="apellido"> Ingrese Su Apellido</label>-->
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                </div>
+                <!--<div>
+                    <input type="email" id="email"  name="email" placeholder="Ingrese su Email" required>
+                    <input type="password" id="pass"  name="pass" placeholder="Contraseña" required>
+                </div>-->
+                <div>
+                    <textarea name="comentario" id="comentario" cols="60" rows="5" placeholder="¿Sobre Qué Quieres Hablar?" required>
+                    </textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar Formulario" required>
+                    <!-- <input type="Reset" value="Limpiar Formulario" required>-->
+                </div>
+                <div>
+                    <p>Recuerda incluir un título para tu charla</p>
+                </div>
+            </form>
+            <div>
+            </div>
+        </section>
+    </main>
+    <!--Pie de la Pagina-->
+    <footer>
+        <div class="fondoPie">
+            <a class="letrasPie" href="">Preguntas Frecuentes</a>
+            <a class="letrasPie" href="">Contactanos</a>
+            <a class="letrasPie" href="">Prensa</a>
+            <a class="letrasPie" href="">Conferencias</a>
+            <a class="letrasPie" href="">Terminos y Condiciones</a>
+            <a class="letrasPie" href="">Privacidad</a>
+            <a class="letrasPie" href="">Estudiantes</a>
+        </div>
+    </footer>
+</body>
+</html>
