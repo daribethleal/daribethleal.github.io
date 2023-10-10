@@ -25,7 +25,15 @@ etiqueta{
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    padding: 10px;
+}
+/*@media screen and (min-width:992px) {
+    flex-direction: row;
+    
+}*/
 /*<!--Menú Superior-->*/
+.header{
 .barraNavegacion1{
     padding-top: 15px;
     padding-bottom: 15px;
@@ -36,16 +44,16 @@ etiqueta{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    .logCac{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    .logo{
-        width: 100px;
-    }
+        .logCac{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+            .logo{
+                width: 100px;
+            }
 } 
 .barraNavegacion2{   
     .enlacesNavegacion{
@@ -54,43 +62,46 @@ etiqueta{
         padding: 0;
         display: flex;
         }
-        .listasItems{
-        padding-right: 20px;
-        }
-        .navItems{
-            text-decoration: none;
-        }
-        .letrasBlancas{
-            color: rgb(255, 255, 255);
-            font-size: 1rem;
-            font-weight: 400;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        .letrasGrises{
-            color: rgb(95, 94, 94);
-            font-size: 1rem;
-            font-weight: 400;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        .letrasVerdes{
-            color: rgb(12, 102, 24);
-            font-size: 1rem;
-            font-weight: 400;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
+            .listasItems{
+            padding-right: 20px;
+            }
+                .navItems{
+                    text-decoration: none;
+                }
+                    .letrasBlancas{
+                        color: rgb(255, 255, 255);
+                        font-size: 1rem;
+                        font-weight: 400;
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    }
+                    .letrasGrises{
+                        color: rgb(95, 94, 94);
+                        font-size: 1rem;
+                        font-weight: 400;
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    }
+                    .letrasVerdes{
+                        color: rgb(12, 102, 24);
+                        font-size: 1rem;
+                        font-weight: 400;
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    }
+}
 }
 
 /*<!--Cuerpo de la Pagina-->*/
 .Conf{
-    min-height: 600px;
-    max-height: 2000px;
+    /*min-height: 600px;
+    max-height: 2000px;*/
+    height: 100vh;
+    padding: 20px;
     background: linear-gradient(to right top, #00000048, #00000048, #00000048), url(../imagenes_integrador_front/ba1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: left;
-
+    background-position-x: center;
 }
 .h1{
+    text-align: right;
     font-size: 2rem;
     font-weight: 700;
     font-family: Arial;
@@ -98,6 +109,7 @@ etiqueta{
     line-height: 1.2;
 }
 .p1{
+    text-align: right;
     font-size: 1rem;
     font-weight: 400;
     font-family: Arial;
@@ -105,8 +117,21 @@ etiqueta{
     line-height: 1.2;
     margin-top: 5px;
 }
+.bordes {
+    border: #ffffff;
+    align-content: stretch;
+    margin: auto;
+}
+.textBoton {
+    text-decoration: none;
+    text-align: center;
+    border: #ffffff;
+    align-content: stretch;
+    margin: auto;
+}
+
 .contenedorOradores{
-    padding: 20px;
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -114,63 +139,252 @@ etiqueta{
     align-items: center;
     background-color: #ffffff;
     width: 80%;
-    margin: 10% auto;
+    margin-top: 0;
+    margin: 1% auto;
     gap: 20px;
-    /*text-align: center;
-    align-items: normal;*/
     line-height: 1.2;
     font-family: Arial;
 }
+#Oradores {
+    padding: 20px;
+    text-align: center;
+}
+#Oradores h2 {
+    font-size: 2rem; 
+    margin-top: 0; 
+    
+}
+#Oradores div {
+    font-size: 1rem; 
+}
+
 .tarjetas{
     display: inline-block;
     width: 30%;
     height: 50%;
     padding: 0;
     border: 1px solid rgba(107, 106, 106, 0.637);
+    border-radius: 10px;
     align-items: center;
     justify-content: center;
 }
 .tarjetas img{
     padding: 0;
+    border-radius: 10px;
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
-.p2{
+.h3{
+    font-size: 2rem;
+    font-weight:700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #000000;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.p3{
     font-size: 13px;
     font-weight:100;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #000000;
     line-height: 1.5;
-    margin-top: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
-.form1{}
-.form2{}
-.form3{}
-.form4{}
+.form1{
+    font-size: 12px;
+    font-weight:700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #000000;
+    line-height: 1.5;
+    background-color: yellow; 
+    border-radius: 10px;
+    padding: 5px 5px; 
+    margin: 5px 5px; 
+    display: inline-block; 
+}
+.form2{
+    font-size: 12px;
+    font-weight:700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffffff;
+    line-height: 1.5;
+    background-color: rgb(48, 144, 233); 
+    border-radius: 10px;
+    padding: 5px 5px; 
+    margin: 5px 5px; 
+    display: inline-block; 
+}
+.form3{
+    font-size: 12px;
+    font-weight:700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffffff;
+    line-height: 1.5;
+    background-color: rgb(78, 78, 77); 
+    border-radius: 10px;
+    padding: 5px 5px; 
+    margin: 5px 5px; 
+    display: inline-block; 
+}
+.form4{
+    font-size: 12px;
+    font-weight:700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffffff;
+    line-height: 1.5;
+    background-color: rgb(255, 5, 5); 
+    border-radius: 10px;
+    padding: 5px 5px; 
+    margin: 5px 5px; 
+    display: inline-block; 
+}
+/*<!--Seccion de BsAs Octubre-->*/
+#HorayFecha {
+    display: flex;
+    color: white;
+    padding: 20px;
+    align-items: center;
+}
 
-.fondoPie{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 50px;
-    padding-left: 50px;
-    background-image: linear-gradient(to right, #1c3643, #1c3d4e, #1d445a, #1d4c66, #1e5372);
+.seccion3 {
+    flex: 1;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    border: 1px solid #ccc; /* Añade una línea de borde gris */
 }
-.letrasPie{
-    text-decoration: none;
-    list-style: none;
-    display: inline;
-    color: rgb(255, 255, 255);
+
+.seccion3Imagen {
+    flex: 1;
+    padding: 0; /* Agrega un espacio entre la imagen y el borde */
+    text-align: center; /* Centra la imagen horizontalmente */
+}
+
+.seccion3Imagen img {
+    width: 100%;
+    height: 100%;
+}
+
+.Seccion3Texto {
+    flex: 1;
+    background-color: rgba(53,58,54); /* Fondo oscuro con transparencia solo para el texto */
+    padding: 20px; /* Espaciado interno para separar el texto del borde */
+    text-align: left;
+}
+
+.h2 {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: Arial;
+    color: #ffffff;
+    line-height: 1.2; /* Color de texto blanco */
+}
+
+.p2 {
+    text-align: left;
     font-size: 1rem;
     font-weight: 400;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Arial;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-top: 5px; /* Color de texto blanco */
+}
+
+/*.seccion3{
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-} 
+        .seccion3Imagen{
+            width: 100%;
+            height: 50vh;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            }
+            .seccion3Texto{
+            background-color: rgb(53, 58, 64);
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 50vh;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+           
+            line-height: 1.5;
+            }
+            h2{
+                text-align: left;
+                font-size: 2rem;
+                font-weight: 700;
+                font-family: Arial;
+                color: #ffffff;
+                line-height: 1.2;
+            }
+            .p2{
+                text-align: left;
+                font-size: 1rem;
+                font-weight: 400;
+                font-family: Arial;
+                color: #ffffff;
+                line-height: 1.2;
+                margin-top: 5px;
+            }
+        }*/
+/*<!--Seccion de Formulario-->*/
+
+/*<!--Pie de la Pagina-->*/
+.footer {
+    background: linear-gradient(to right, #1c3643, #1c3d4e, #1d445a, #1d4c66, #1e5372); /* tu gradiente aquí */;
+    padding: 20px; /* Espacio interior para separar el contenido del borde */
+    text-align: center; /* Alinea el texto en el centro del footer */
+}
+
+.listasPie {
+    list-style-type: none; /* Elimina los puntos de lista */
+    padding: 0;
+}
+
+.listasPie li {
+    display: inline; /* Muestra los elementos de la lista en línea */
+    margin-right: 15px; /* Espacio entre los elementos de la lista */
+}
+
+.letrasPie {
+    color: white; /* Texto en color blanco */
+    text-decoration: none; /* Elimina subrayado de los enlaces */
+    font-size: 14px; /* Tamaño de fuente deseado */
+}
+
+/*.footer{
+    .enlacesPie{
+        .fondoPie{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-right: 50px;
+            padding-left: 50px;
+            background-image: linear-gradient(to right, #1c3643, #1c3d4e, #1d445a, #1d4c66, #1e5372);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .letrasPie{
+            text-decoration: none;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            color: rgb(255, 255, 255);
+            font-size: 1rem;
+            font-weight: 400;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+    }*/
