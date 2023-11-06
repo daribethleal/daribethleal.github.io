@@ -106,7 +106,7 @@
                         <input type="password" id="pass"  name="pass" placeholder="Contraseña" required>
                     </div>-->
                     <div>
-                        <h2>Total a Pagar:</h2>
+                        <h4>Total a Pagar</h4> 
                         <h2 id="totalAPagar">$0.00</h2> 
                     <div>
                     <input class="BtnSubmit" type="submit" value="Resumen" required>
@@ -159,7 +159,7 @@
         document.getElementById("categoria").value = tipoSeleccionado
         totalAPagar = (200 - (200 * descuento)) * cantidadEntradas;
 
-        document.getElementById("totalAPagar").textContent = "Total A Pagar: $ " + totalAPagar.toFixed(2);
+        document.getElementById("totalAPagar").textContent = " $ " + totalAPagar.toFixed(2);
     }
 
     function changeSelect(elem) {
